@@ -122,9 +122,10 @@
                 </LinearLayout>
 
                 <LinearLayout
+
                     android:orientation="horizontal"
                     android:layout_width="wrap_content"
-                    android:layout_height="fill_parent">
+                    android:layout_height="wrap_content">
 
                     <RelativeLayout
                         android:layout_width="wrap_content"
@@ -152,10 +153,33 @@
                     </RelativeLayout>
                     <RelativeLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        >
 
 
+                        <ImageButton
 
+
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:id="@+id/imagebtnnotificacao"
+                            android:background="@drawable/btnnotificacao"
+                            android:onClick="btnGerenciador_notificacao"
+                            android:clickable="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="Notificação"
+                            android:id="@+id/textView11"
+                            android:textColor="#ffffffff"
+                            android:layout_below="@+id/imagebtnnotificacao"
+                            android:layout_centerHorizontal="true" />
                     </RelativeLayout>
 
                 </LinearLayout>
