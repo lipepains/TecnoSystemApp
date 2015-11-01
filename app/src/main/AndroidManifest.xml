@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="comsite.tecnosystemej.tecnosystemapp" >
+
+    <!-- To access Google+ APIs: -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--
+ To retrieve OAuth 2.0 tokens or invalidate tokens to disconnect a user. This disconnect
+     option is required to comply with the Google+ Sign-In developer policies
+    -->
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" /> <!-- To retrieve the account name (email) as part of sign-in: -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" /> <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logots"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".layout_inicio"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".layout_a_empresa"
+            android:label="A Empresa" >
+        </activity>
+        <activity
+            android:name=".layout_agenda"
+            android:label="Agenda" >
+        </activity>
+        <activity
+            android:name=".layout_login"
+            android:label="Login" >
+        </activity>
+        <activity
+            android:name=".layout_membros"
+            android:label="Membros" >
+        </activity>
+        <activity
+            android:name=".layout_membros_diretoria"
+            android:label="Membros" >
+        </activity>
+        <activity
+            android:name=".layout_membros_membros"
+            android:label="Membros" >
+        </activity>
+        <activity
+            android:name=".layout_projetos"
+            android:label="Projetos" >
+        </activity>
+        <activity
+            android:name=".layout_projetos_c"
+            android:label="Projetos" >
+        </activity>
+        <activity
+            android:name=".layout_projetos_ed"
+            android:label="Projetos" >
+        </activity>
+        <activity
+            android:name=".layout_projetos_ni"
+            android:label="Projetos" >
+        </activity>
+        <activity
+            android:name=".layout_visitante"
+            android:label="Tecno System" >
+        </activity>
+        <activity
+            android:name=".tecno_system"
+            android:label="Tecno System" >
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".gerenciador_membro"
+            android:label="Gerenciador Membro" >
+        </activity>
+        <activity
+            android:name=".gerenciador_inicial"
+            android:label="bb" >
+        </activity>
+        <activity
+            android:name=".gerenciador_projetos"
+            android:label="bb" >
+        </activity>
+        <activity
+            android:name=".gerenciador_agenda"
+            android:label="Gerenciador Agenda" >
+        </activity>
+        <activity
+            android:name=".gerenciador_agenda_membro"
+            android:label="Gerenciador de membro" >
+        </activity>
+        <activity
+            android:name=".gerenciador_agenda_visitante"
+            android:label="Gerenciador de visitante" >
+        </activity>
+        <activity
+            android:name=".layout_agenda_visitante"
+            android:label="bb" >
+        </activity>
+        <activity
+            android:name=".layout_membro_info"
+            android:label="bb" >
+        </activity>
+    </application>
+
+</manifest>

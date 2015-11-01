@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView6" >
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="168dp"
+                        android:id="@+id/imageView2"
+                        android:src="@drawable/logots" />
+
+                    <TextView
+                        android:layout_marginTop="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Bem Vindo!"
+                        android:id="@+id/bemvindo"
+                        android:textColor="#ffffffff"
+                        android:layout_below="@+id/imageView2"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="28dp"
+                        />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="330dp"
+                android:layout_height="275dp">
+
+                <RelativeLayout
+                    android:layout_width="279dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Usuário"
+                        android:textColor="#fff"
+                        android:textSize="26dp"
+                        android:id="@+id/textView"
+                        />
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_below="@id/textView"
+                        android:inputType="textPersonName"
+                        android:id="@+id/edtUsuario"
+                        android:background="#5e333333"
+                        android:textColor="#ffffff">
+
+                        <requestFocus />
+                    </EditText>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="279dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Senha"
+                        android:textColor="#fff"
+                        android:textSize="26dp"
+                        android:id="@+id/textView2"
+
+                        />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_below="@id/textView2"
+                        android:id="@+id/edtSenha"
+                        android:background="#5e333333"
+                        android:inputType="textPassword"
+                        android:ems="10"
+                        android:textColor="#ffffff"
+
+                        android:layout_centerHorizontal="true"
+                        />
+
+
+                </RelativeLayout>
+
+                <ImageButton
+                    android:layout_width="141dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/Img_btnEntrar"
+                    android:background="@drawable/entrar"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="40dp"
+                    android:onClick="btnTecnoSystem"
+                    android:clickable="true" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
+

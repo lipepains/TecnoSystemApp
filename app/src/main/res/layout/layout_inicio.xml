@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView3" >
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="182dp"
+                        android:layout_height="204dp"
+                        android:id="@+id/imageView2"
+                        android:src="@drawable/logots" />
+
+                    <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Bem Vindo!"
+                    android:id="@+id/bemvindo"
+                    android:textColor="#ffffffff"
+                    android:layout_below="@+id/imageView2"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="30dp"
+                    />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:weightSum="1"
+                android:orientation="horizontal"
+                android:layout_marginTop="40dp">
+
+                <RelativeLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:id="@+id/imagebtnmembroinicial"
+                        android:background="@drawable/iconmembroinicial"
+                        android:onClick="btnLogin"
+                        android:clickable="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Membro"
+                        android:id="@+id/labelmembroinicial"
+                        android:textColor="#ffffffff"
+                        android:layout_below="@+id/imagebtnmembroinicial"
+                        android:layout_centerHorizontal="true"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    >
+
+                    <ImageButton
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:id="@+id/imagebtnvisitanteinicial"
+                        android:background="@drawable/iconvisitanteinicial"
+                        android:clickable="true"
+                        android:onClick="btnVisitante" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Visitante"
+                        android:id="@+id/labelvisitanteinicial"
+                        android:textColor="#ffffffff"
+                        android:layout_below="@+id/imagebtnvisitanteinicial"
+                        android:layout_centerHorizontal="true"
+                        android:onClick="btnVisitante"
+                        android:clickable="true" />
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

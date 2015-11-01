@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView3">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nome do evento"
+                android:id="@+id/textView3"
+                android:textSize="25dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edtNomeEvento" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Descrição do evento"
+                android:id="@+id/textView4"
+                android:textSize="25dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edtDescricaoEvento" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Local do Evento"
+                android:id="@+id/textlocal"
+                android:textSize="25dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edtLocalEvento" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Data do evento "
+                    android:id="@+id/textdata"
+                    android:textSize="25dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/dataEvento"
+                    android:text="Selecione Data"
+                    android:onClick="selecionarData"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Adicionar evento"
+                android:id="@+id/btnAdicionar"
+                android:clickable="true"
+                android:layout_marginTop="20dp"
+                android:onClick="btnAdicionarEvento" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Deletar evento"
+                android:id="@+id/btnDeletar"
+                android:clickable="true"
+                android:onClick="btnDeletarEvento" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Editar evento"
+                android:id="@+id/btnEditar"
+                android:clickable="true"
+                android:onClick="btnEditarEvento" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Buscar evento"
+                android:id="@+id/btnBuscar"
+                android:clickable="true"
+                android:onClick="btnBuscarEvento" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Buscar todos os eventos"
+                android:id="@+id/btnBuscarTodos"
+                android:clickable="true"
+                android:onClick="btnBuscarTudoEvento" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Limpar caixas"
+                android:id="@+id/btnLimpar"
+                android:clickable="true"
+                android:onClick="limparCaixasEvento" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

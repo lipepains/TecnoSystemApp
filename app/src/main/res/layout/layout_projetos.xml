@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    android:gravity="center">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView5"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="141dp"
+                android:gravity="center_horizontal|center_vertical"
+                >
+
+                <ImageView
+                    android:layout_marginTop="30dp"
+                    android:layout_width="269dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/imageView3"
+                    android:background="@drawable/projetos_"
+                    android:layout_gravity="top" />
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:layout_width="344dp"
+                android:layout_height="344dp"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:layout_marginTop="50dp"
+                    android:clickable="true"
+                    android:onClick="btnNI">
+
+
+                    <ImageButton
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="60dp "
+                        android:layout_height="60dp"
+                        android:id="@+id/Naoinciados"
+                        android:background="@drawable/naoinciados_icon"
+                        android:clickable="true"
+                        android:onClick="btnNI" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Não Iniciados"
+                        android:id="@+id/labelNaoIniciados"
+                        android:textColor="#ffffffff"
+                        android:textSize="24dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="14dp"
+                        android:clickable="false" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:layout_marginTop="20dp"
+                    android:clickable="true"
+                    android:onClick="btnED">
+
+
+                <ImageButton
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="60dp "
+                        android:layout_height="60dp"
+                        android:id="@+id/Emdesenvolvimento"
+                        android:background="@drawable/emdesenvolvimentoicon"
+                    android:onClick="btnED"
+                    android:clickable="true" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Em desenvolvimento"
+                        android:id="@+id/labelemdesenvolvimento"
+                        android:textColor="#ffffffff"
+                        android:textSize="24dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="14dp"
+                        android:clickable="false" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:layout_marginTop="20dp"
+                    android:clickable="true"
+                    android:onClick="btnC">
+
+
+                <ImageButton
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="60dp "
+                        android:layout_height="60dp"
+                        android:id="@+id/concluidos"
+                        android:background="@drawable/concluidosicon"
+                    android:clickable="true"
+                    android:onClick="btnC" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Concluídos"
+                        android:id="@+id/labelconcluido"
+                        android:textColor="#ffffffff"
+                        android:textSize="24dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="14dp"/>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

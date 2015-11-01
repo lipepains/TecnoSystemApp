@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    android:gravity="center">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center_horizontal">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:layout_alignLeft="@+id/scrollView"
+                android:layout_alignStart="@+id/scrollView"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:gravity="center">
+
+                <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="141dp"
+                android:gravity="center_horizontal|center_vertical"
+                >
+
+                <ImageView
+                    android:layout_marginTop="30dp"
+                    android:layout_width="269dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/imageView3"
+                    android:background="@drawable/aempresa"
+                    android:layout_gravity="top" />
+
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical"
+                    android:layout_width="344dp"
+                    android:layout_height="397dp"
+                    android:baselineAligned="false"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_weight="0.55">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                       >
+
+
+                        <ImageButton
+                            android:layout_marginLeft="20dp"
+                            android:layout_width="50dp "
+                            android:layout_height="50dp"
+                            android:id="@+id/home"
+                            android:background="@drawable/sitehome"
+                            android:onClick="btnHome" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        >
+
+
+                        <ImageButton
+                            android:layout_marginLeft="20dp"
+                            android:layout_width="50dp "
+                            android:layout_height="50dp"
+                            android:id="@+id/facebook"
+                            android:background="@drawable/facebook"
+                            android:onClick="btnFacebook" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp">
+
+
+                        <ImageButton
+                            android:layout_marginLeft="20dp"
+                            android:layout_width="50dp "
+                            android:layout_height="50dp"
+                            android:id="@+id/twitter"
+                            android:background="@drawable/twitter"
+                            android:onClick="btnTwitter" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp">
+
+
+                        <ImageButton
+                            android:layout_marginLeft="20dp"
+                            android:layout_width="50dp "
+                            android:layout_height="50dp"
+                            android:id="@+id/insta"
+                            android:background="@drawable/instagran"
+                            android:onClick="btnInstagran" />
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

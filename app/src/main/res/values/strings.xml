@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Tecno System </string>
+    <string name="login">Login</string>
+    <string name="tecnosystem">Tecno System</string>
+    <string name="agenda">Agenda</string>
+    <string name="membros">Membros</string>
+    <string name="projetos">Projetos</string>
+    <string name="empresa">Empresa</string>
+    <string name="sair">Sair</string>
+    <string name="cargos">Cargos</string>
+    <string-array name="categoria_cargos">
+         <item>Diretor</item>
+         <item>Gerente</item>
+         <item>Desenvolvedor</item>
+         <item>Designer</item>
+         <item>Assessor</item>
+    </string-array>
+    <string-array name="categoria_projetos">
+        <item>Projeto Concluido</item>
+        <item>Projeto Em andamento</item>
+        <item>Projeto Não iniciado</item>
+    </string-array>
+
+
+
+
+
+</resources>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+
+    android:gravity="center_vertical|center_horizontal">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView2"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|center_horizontal"
+                android:id="@+id/linearLayout">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+
+                            android:layout_width="170dp"
+                            android:layout_height="190dp"
+                            android:id="@+id/imageView"
+                            android:src="@drawable/logots"
+                            android:layout_centerHorizontal="true"/>
+
+                        <TextView
+                            android:layout_marginTop="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Gerenciador de \n Agenda"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="#fff"
+                            android:layout_below="@id/imageView"
+                            android:textSize="28dp"
+                            android:id="@+id/textView9"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="40dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical|center_horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageButton
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:id="@+id/imagemembro_agenda"
+                            android:background="@drawable/iconmembroinicial"
+                            android:onClick="gerenciarAgendaMembro"
+                            android:clickable="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:gravity="center"
+                            android:text="Agenda \nMembro"
+                            android:id="@+id/labelagenda_membro"
+                            android:textSize="25dp"
+                            android:textColor="#ffffffff"
+                            android:layout_below="@+id/imagemembro_agenda"
+                            android:layout_centerHorizontal="true"
+                            android:clickable="true"
+                            android:onClick="btnAgenda" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        >
+
+                        <ImageButton
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:id="@+id/imagemembro_projetos"
+                            android:background="@drawable/iconvisitanteinicial"
+                            android:onClick="gerenciarAgendaVisitante"
+                            android:clickable="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:gravity="center"
+                            android:layout_centerInParent="true"
+                            android:text="Agenda\nVisitante"
+                            android:id="@+id/labelagenda_visitante"
+                            android:textSize="25dp"
+                            android:textColor="#ffffffff"
+                            android:layout_below="@+id/imagemembro_projetos"
+                            android:layout_centerHorizontal="true"
+                            />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent">
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </FrameLayout>
+</RelativeLayout>

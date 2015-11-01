@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView3">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nome do projeto"
+                android:id="@+id/textView3"
+                android:textSize="25dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edtNomeProjeto" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Descrição do projeto"
+                android:id="@+id/textView4"
+                android:textSize="25dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edtDescricaoProjeto" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Tipo do projeto"
+                    android:id="@+id/textView5"
+                    android:textSize="25dp"
+                    android:layout_weight="1" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/spnProjetos"
+                    android:layout_weight="1"
+                    android:prompt="@string/projetos"/>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Adicionar projetos"
+                android:id="@+id/btnAdicionar"
+                android:clickable="true"
+                android:layout_marginTop="20dp"
+                android:onClick="btnAdicionarProjeto" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Deletar projetos"
+                android:id="@+id/btnDeletar"
+                android:clickable="true"
+                android:onClick="btnDeletarProjeto" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Editar projeto"
+                android:id="@+id/btnEditar"
+                android:clickable="true"
+                android:onClick="btnEditarProjeto" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Buscar projetos"
+                android:id="@+id/btnBuscar"
+                android:clickable="true"
+                android:onClick="btnBuscarProjeto" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Buscar todos os projetos"
+                android:id="@+id/btnBuscarTodos"
+                android:clickable="true"
+                android:onClick="btnBuscarTudoProjeto" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Limpar caixas"
+                android:id="@+id/btnLimpar"
+                android:clickable="true"
+                android:onClick="limparCaixasProjeto" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
